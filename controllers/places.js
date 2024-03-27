@@ -7,13 +7,13 @@ router.get('/', (req, res) => {
         city: 'Seattle',
         state: 'WA',
         cuisines: 'Thai, Pan-Asian',
-        pic: 'https://www.surrealcms.com/uploads/placekitten-selection.jpg'
+        pic: '/images/Thai-Restaurant.jpg'
       }, {
         name: 'Coding Cat Cafe',
         city: 'Phoenix',
         state: 'AZ',
         cuisines: 'Coffee, Bakery',
-        pic: 'https://www.surrealcms.com/uploads/placekitten-selection.jpg'
+        pic: '/images/Cafe.jpg'
       }]
 
     res.render('places/index', { places })
