@@ -5,7 +5,15 @@ function show (data) {
     return (
         <Def>
             <main>
-                <h1>{ data.place.name }</h1>
+                <div className="row">
+                    <div className="col-sm-6">
+                        <img/>
+                        <h3>
+
+                        </h3>
+                    </div>
+                    <div className="col-sm-6">
+                    <h1>{ data.place.name }</h1>
                 <a href={`/places/${data.id}/edit`} className="btn btn-warning">
                     Edit
                 </a>
@@ -14,6 +22,18 @@ function show (data) {
                         Delete
                     </button>
                 </form>
+                    </div>
+                    <h2>
+                        Description
+                    </h2>
+                    <h3>
+                        {data.place.showEstablished()}
+                    </h3>
+                    <h4>
+                        Serving {data.place.cuisines}
+                    </h4>
+                                
+                </div>
             </main>
         </Def>
     )
